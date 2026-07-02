@@ -1,6 +1,6 @@
 {
     "name": "zerp/webhook",
-    "description": "Description for webhook package",
+    "description": "Webhook management module for the Zerp ERP platform",
     "type": "library",
     "license": "MIT",
     "require": {},

@@ -18,7 +18,7 @@ class MarketplaceSettingSeeder extends Seeder
             $files = File::files($marketplaceDir);
             foreach ($files as $file) {
                 if (in_array($file->getExtension(), ['png', 'jpg', 'jpeg', 'gif', 'webp'])) {
-                    $screenshots[] = '/packages/workdo/Webhook/src/marketplace/' . $file->getFilename();
+                    $screenshots[] = '/packages/local/Webhook/src/marketplace/' . $file->getFilename();
                 }
             }
         }
@@ -33,7 +33,7 @@ class MarketplaceSettingSeeder extends Seeder
                 'sections' => [
                     'hero' => [
                         'variant' => 'hero1',
-                        'title' => 'Webhook Module for ERPGo SaaS',
+                        'title' => 'Webhook Module for Zerp',
                         'subtitle' => 'Streamline your webhook workflow with comprehensive tools and automated management.',
                         'primary_button_text' => 'Install Webhook Module',
                         'primary_button_link' => '#install',
@@ -53,21 +53,21 @@ class MarketplaceSettingSeeder extends Seeder
                         'subSections' => [
                             [
                                 'title' => 'Real-time Event Notifications',
-                                'description' => 'Automatically send HTTP requests to external systems when events occur across 30+ modules in your WorkDo system. This powerful integration ensures your external applications stay synchronized with real-time data updates.',
+                                'description' => 'Automatically send HTTP requests to external systems when events occur across 30+ modules in your Zerp system. This powerful integration ensures your external applications stay synchronized with real-time data updates.',
                                 'keyPoints' => ['Event-driven automation', 'Multi-module support', 'Real-time synchronization', 'External system integration'],
-                                'screenshot' => '/packages/workdo/Webhook/src/marketplace/image1.png'
+                                'screenshot' => '/packages/local/Webhook/src/marketplace/image1.png'
                             ],
                             [
                                 'title' => 'Advanced Webhook Management',
                                 'description' => 'Configure and manage webhooks with flexible settings including GET/POST methods, custom URLs, and active/inactive status controls. Permission-based access ensures secure webhook administration across different user types.',
                                 'keyPoints' => ['Flexible HTTP methods', 'Custom URL configuration', 'Status management', 'Permission-based access'],
-                                'screenshot' => '/packages/workdo/Webhook/src/marketplace/image2.png'
+                                'screenshot' => '/packages/local/Webhook/src/marketplace/image2.png'
                             ],
                             [
                                 'title' => 'Smart Data Extraction',
                                 'description' => 'Utilize 100+ specialized data extractors that format event data for each module type with structured JSON payloads. Each webhook delivers contextual information with timestamps and module-specific data formatting.',
                                 'keyPoints' => ['100+ data extractors', 'Structured JSON payloads', 'Module-specific formatting', 'Contextual data delivery'],
-                                'screenshot' => '/packages/workdo/Webhook/src/marketplace/image3.png'
+                                'screenshot' => '/packages/local/Webhook/src/marketplace/image3.png'
                             ]
                         ]
                     ],
