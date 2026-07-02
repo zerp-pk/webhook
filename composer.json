@@ -1,0 +1,29 @@
+{
+    "name": "zerp/webhook",
+    "description": "Description for webhook package",
+    "type": "library",
+    "license": "MIT",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Zerp\\Webhook\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ZAWAT OFFICIALS PVT LTD",
+            "email": "zawatofficials@gmail.com"
+        },
+        {
+            "name": "HafizMMoaz",
+            "email": "hafizmoazkhalid@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zerp\\Webhook\\Providers\\WebhookServiceProvider"
+            ]
+        }
+    }
+}
